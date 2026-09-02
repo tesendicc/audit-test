@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riverbend Studio — Handmade Pottery &amp; Ceramics</title>
+  <meta name="description" content="Riverbend Studio makes handmade pottery and ceramics. Browse our collection, read our story, and get in touch about custom orders." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a href="#" class="logo">riverbend</a>
+
+      <nav aria-label="Primary">
+        <button
+          class="nav-toggle"
+          id="nav-toggle"
+          aria-expanded="false"
+          aria-controls="primary-nav"
+        >
+          <span class="visually-hidden">Menu</span>
+          <span aria-hidden="true" class="nav-toggle-icon"></span>
+        </button>
+
+        <ul id="primary-nav" class="nav-list">
+          <li><a href="#collection">Collection</a></li>
+          <li><a href="#story">Our Story</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <section class="hero">
+      <!-- namjerno nedostajući alt -->
+      <img
+        src="slike/1.jpg"
+        class="hero-bg-image"
+      />
+      <div class="hero-scrim" aria-hidden="true"></div>
+
+      <div class="wrap hero-content">
+        <p class="eyebrow">one piece at a time</p>
+        <h1>hand-made pottery</h1>
+        <p class="hero-copy">Every mug, bowl, and vase from Riverbend Studio is wheel-thrown, glazed, and fired by hand in our small workshop.</p>
+        <a class="button button-primary" href="#collection">Browse the collection</a>
+      </div>
+    </section>
+
+    <section id="collection" class="collection">
+      <div class="wrap">
+        <h2>Collection</h2>
+        <p class="section-intro">A small selection of current pieces. Every item is one of a kind, so once it's gone, it's gone.</p>
+
+        <ul class="card-grid">
+          <li class="card">
+            <img
+              src="slike/2.jpg"
+              alt="Cute colourful mug"
+              width="400"
+              height="300"
+            />
+            <p class="card-caption">Cute Colourful Mug</p>
+            <div class="card-body">
+              <p>12 oz. Food-safe glaze. Dishwasher and microwave safe.</p>
+              <p class="price">$32</p>
+              <a href="#" class="button button-secondary">
+                View mug
+                <span class="visually-hidden">, Cute Colourful Mug</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="card">
+            <img
+              src="slike/3.jpg"
+              alt="Striped ceramic mug"
+              width="400"
+              height="300"
+            />
+            <p class="card-caption">Striped Ceramic Mug</p>
+            <div class="card-body">
+              <p>9 in. diameter. Great for tea and coffee.</p>
+              <p class="price">$48</p>
+              <a href="#" class="button button-secondary">
+                View mug
+                <span class="visually-hidden">, Striped Ceramic Mug</span>
+              </a>
+            </div>
+          </li>
+
+          <li class="card">
+            <img
+              src="slike/4.jpg"
+              alt="Tiny mug with heart"
+              width="400"
+              height="300"
+            />
+            <p class="card-caption">Tiny Mug With Heart</p>
+            <div class="card-body">
+              <p>Ideal for single gifts.</p>
+              <p class="price">$38</p>
+              <a href="#" class="button button-secondary">
+                View mug
+                <span class="visually-hidden">, Tiny Mug With Heart</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="story" class="story">
+      <div class="wrap">
+        <h2>Our story</h2>
+        <p>Riverbend Studio started in a converted garage in 2016. What began as a hobby turned into a small working studio, now run by two potters and a rotating cast of very supervisory cats.</p>
+        <p>We believe good pottery should be used, not just displayed — so everything we make is built for daily life: coffee in the morning, dinner at night, flowers on the table.</p>
+      </div>
+    </section>
+
+    <section id="process" class="process">
+      <div class="wrap">
+        <h2>How each piece is made</h2>
+
+        <ol class="process-steps">
+          <li>
+            <h3>1. Throwing</h3>
+            <p>Clay is centered and shaped on the wheel by hand.</p>
+          </li>
+          <li>
+            <h3>2. Trimming</h3>
+            <p>Once leather-hard, each piece is trimmed to refine its final shape and foot.</p>
+          </li>
+          <li>
+            <h3>3. Bisque firing</h3>
+            <p>Pieces are fired once to harden the clay before glazing.</p>
+          </li>
+          <li>
+            <h3>4. Glazing &amp; final firing</h3>
+            <p>Glaze is applied by hand, then fired a second time at a higher temperature.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Get in touch</h2>
+        <p class="section-intro">Interested in a custom order or a wholesale inquiry? Send us a note and we'll get back to you within a few days.</p>
+
+        <form novalidate id="contact-form">
+          <div class="form-row">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error" />
+            <span id="name-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error" />
+            <span id="email-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <!-- outline:none, greška fokusa -->
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="no-visible-focus"
+              autocomplete="off"
+              required
+              aria-describedby="subject-error"
+            />
+            <span id="subject-error" class="error-message" role="alert"></span>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required aria-describedby="message-error"></textarea>
+            <span id="message-error" class="error-message" role="alert"></span>
+          </div>
+
+          <fieldset class="form-row">
+            <legend>How should we reply?</legend>
+            <div class="radio-option">
+              <input type="radio" id="reply-email" name="reply-method" value="email" checked />
+              <label for="reply-email">Email</label>
+            </div>
+            <div class="radio-option">
+              <input type="radio" id="reply-phone" name="reply-method" value="phone" />
+              <label for="reply-phone">Phone</label>
+            </div>
+          </fieldset>
+
+          <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+          <button type="submit" class="button button-primary">Send message</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; 2026 Riverbend Studio. All rights reserved.</p>
+      <ul class="footer-links">
+        <li><a href="#">Shipping &amp; returns</a></li>
+        <li><a href="#">Privacy policy</a></li>
+        <li><a href="mailto:hello@riverbendstudio.example">hello@riverbendstudio.example</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
