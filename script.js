@@ -5,8 +5,6 @@
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('primary-nav');
 
-navList.setAttribute('aria-hidden', 'true');
-
 navToggle.addEventListener('click', () => {
   const isOpen = navList.classList.toggle('is-open');
   navToggle.setAttribute('aria-expanded', String(isOpen));
