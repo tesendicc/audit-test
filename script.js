@@ -5,16 +5,19 @@
 const navToggle = document.getElementById('nav-toggle');
 const navList = document.getElementById('primary-nav');
 
+navList.setAttribute('aria-hidden', 'true');
+
 navToggle.addEventListener('click', () => {
   const isOpen = navList.classList.toggle('is-open');
   navToggle.setAttribute('aria-expanded', String(isOpen));
+  navList.setAttribute('aria-hidden', String(!isOpen));
 });
 
-// Close the mobile menu with Escape, returning focus to the toggle.
 navList.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && navList.classList.contains('is-open')) {
     navList.classList.remove('is-open');
     navToggle.setAttribute('aria-expanded', 'false');
+    navList.setAttribute('aria-hidden', 'true');
     navToggle.focus();
   }
 });
